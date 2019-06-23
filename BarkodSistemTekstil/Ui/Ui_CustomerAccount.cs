@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BarkodSistemTekstil.Controller;
 
 namespace BarkodSistemTekstil.Ui
 {
@@ -19,12 +20,12 @@ namespace BarkodSistemTekstil.Ui
         Model.BarcodeSystemDataContext data = new Model.BarcodeSystemDataContext();
         decimal amount = 0;
         int SelectedCustomerID=0;
-        Class.Fonksyonlar fonk = new Class.Fonksyonlar();
+        CustomerConnectComponent fonk = new CustomerConnectComponent();
         private void Ui_CustomerAccount_Load(object sender, EventArgs e)
         {
             var ProccesType = from q in data.SubTboProccesList
                               select new { q.ProccesID,q.ProccesName};
-            fonk.CustomerRefresh(datagridview1);
+            fonk.musterileriDoldur(datagridview1);
             cmbProccesType.DataSource = ProccesType;
             cmbProccesType.DisplayMember = "ProccesName";
             cmbProccesType.ValueMember = "ProccesID";
@@ -107,7 +108,7 @@ namespace BarkodSistemTekstil.Ui
             {
                 MessageDöndür.Message("Müşteri Seçilmedi Yeniden Müşteri Seçiniz.", "Hata", MessageDöndür.MessageIcon.Eror, MessageDöndür.MessageButton.OK);
             }
-            fonk.CustomerRefresh(datagridview1);
+            fonk.musterileriDoldur(datagridview1);
             
         }
 
@@ -120,12 +121,12 @@ namespace BarkodSistemTekstil.Ui
 
         private void txtSearchCustomerName_TextChanged(object sender, EventArgs e)
         {
-            fonk.CustomerAra(datagridview1, txtSearchCustomerName.Text);
+            fonk.musterileriDoldur(datagridview1, txtSearchCustomerName.Text);
         }
 
         private void txtSearchCustomerSurName_TextChanged(object sender, EventArgs e)
         {
-            fonk.CustomerAra(datagridview1, txtSearchCustomerName.Text, txtSearchCustomerSurName.Text);
+            fonk.musterileriDoldur(datagridview1, txtSearchCustomerName.Text, txtSearchCustomerSurName.Text);
         }
 
        

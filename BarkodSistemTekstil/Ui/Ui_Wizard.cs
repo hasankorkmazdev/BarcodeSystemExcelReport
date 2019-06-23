@@ -1,4 +1,5 @@
-﻿using ExcelReport;
+﻿using BarkodSistemTekstil.Controller;
+using ExcelReport;
 using System;
 using System.Data;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace BarkodSistemTekstil.Ui
 
        
         DataGridView dgv = new DataGridView();
-        Class.Fonksyonlar fonk = new Class.Fonksyonlar();
+        CustomerConnectComponent fonk = new CustomerConnectComponent();
         Model.BarcodeSystemDataContext data = new Model.BarcodeSystemDataContext();
         
         private void Ui_Wizard_Load(object sender, EventArgs e)
@@ -211,7 +212,7 @@ namespace BarkodSistemTekstil.Ui
                 panelOperation.Controls.Add(dgv);
                 dgv.Dock = DockStyle.Bottom;
                 dgv.Height = 245;
-                fonk.CustomerRefresh(dgv);
+                fonk.musterileriDoldur(dgv);
             }
             //Ürünlerin Listesi
             else if (level == 1 && deepUno == 1 && deepDos == 0)
@@ -453,11 +454,11 @@ namespace BarkodSistemTekstil.Ui
         }
         private void txtCustomerName_TextChanged(object sender, EventArgs e)
         {
-            fonk.CustomerAra(dgv, txtCustomerName.Text);
+            fonk.musterileriDoldur(dgv, txtCustomerName.Text);
         }
         private void txtCustomerSurname_TextChanged(object sender, EventArgs e)
         {
-            fonk.CustomerAra(dgv, txtCustomerName.Text, txtCustomerSurname.Text);
+            fonk.musterileriDoldur(dgv, txtCustomerName.Text, txtCustomerSurname.Text);
         }
     }
 

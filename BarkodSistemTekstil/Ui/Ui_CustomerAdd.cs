@@ -12,13 +12,12 @@ namespace BarkodSistemTekstil.Ui.Customers
             InitializeComponent();
         }
         BarcodeSystemDataContext Data = new BarcodeSystemDataContext();
-        
-        Class.Fonksyonlar Fonk = new Class.Fonksyonlar();
+
+        Controller.CustomerConnectComponent CCC = new Controller.CustomerConnectComponent();
       
         private void Ui_CustomerAdd_Load(object sender, EventArgs e)
         {
-          
-            Fonk.cmboboxReferansDoldur(cmbCustomerRefrence);
+            CCC.cmboboxReferansDoldur(cmbCustomerRefrence);
            
         }
 

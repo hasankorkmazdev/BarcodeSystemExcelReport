@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BarkodSistemTekstil.Controller;
+using System;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,31 +16,18 @@ namespace BarkodSistemTekstil.Ui
         Model.BarcodeSystemDataContext data = new Model.BarcodeSystemDataContext();
         private void Ui_CustomerEdit_Load(object sender, EventArgs e)
         {
-            Class.Fonksyonlar fonk = new Class.Fonksyonlar();
+            CustomerConnectComponent fonk = new CustomerConnectComponent();
             fonk.cmboboxReferansDoldur(cmbcustomerReference);
-            fonk.CustomerRefresh(datagridview1);
+            fonk.musterileriDoldur(datagridview1);
             datagridview1.AllowUserToAddRows = false;
-            //Kullanıcının Görmesini İstemeğimiz Alanlar
-            datagridview1.Columns["CustomerReference"].Visible = false;
-            datagridview1.Columns["CustomerID"].Visible = false;
-            //Kullanıcın Kolon Başlıklarını Daha Anlamlı Halde Okuması
-            datagridview1.Columns["CustomerName"].HeaderText = "MüsteriAdi";
-            datagridview1.Columns["CustomerSurname"].HeaderText = "MüsteriSoyadi";
-            datagridview1.Columns["CustomerTelephone"].HeaderText = "MüsterininTelefonu";
-            datagridview1.Columns["CustomerAddress"].HeaderText = "MüsterininAdresi";
-            datagridview1.Columns["CustomerOccupotion"].HeaderText = "MüsterininMesleği";
-            datagridview1.Columns["CustomerAccount"].HeaderText = "MüsterininHesabı";
-            datagridview1.Columns["CustomerRegistrationDate"].HeaderText = "Kayıt Tarihi";
-            datagridview1.Columns["CustomerDetails"].HeaderText = "MüşteriDetaylari";
-            datagridview1.Columns["RefUserName"].HeaderText = "ReferansınınAdi";
-            datagridview1.Columns["RefUserSurname"].HeaderText = "ReferansınınSoyAdi";
+         
         }
       
 
         #region Buton-Sil 
         private void btncustomerDelete_Click(object sender, EventArgs e)
         {
-            Class.Fonksyonlar fonk = new Class.Fonksyonlar();
+            CustomerConnectComponent fonk = new CustomerConnectComponent();
             int custID = (int)datagridview1.CurrentRow.Cells["CustomerID"].Value;
             
             var ara = (from q in data.Customer
@@ -60,14 +48,14 @@ namespace BarkodSistemTekstil.Ui
                 MessageBox.Show("Müşteri Silme İşlemi İptal Edildi..", "Müsteri Silme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            fonk.CustomerRefresh(datagridview1);
+            fonk.musterileriDoldur(datagridview1);
         }
         #endregion
 
         #region Buton-Düzenle
         private void btncustomerEdit_Click(object sender, EventArgs e)
         {
-            Class.Fonksyonlar fonk = new Class.Fonksyonlar();
+            CustomerConnectComponent fonk = new CustomerConnectComponent();
 
             //TODO: DATAGRİDVİEVDEN GELEN VERİ VARMI KONTROL EDİLECEK
             if (cmbcustomerReference.SelectedValue == null)
@@ -100,7 +88,7 @@ namespace BarkodSistemTekstil.Ui
                 refEdit.RefUserName = txtcustomerName.Text ;
                 refEdit.RefUserSurname = txtCustomerSurname.Text;
                 data.SubmitChanges();
-                fonk.CustomerRefresh(datagridview1);
+                fonk.musterileriDoldur(datagridview1);
                 MessageDöndür.Message(txtcustomerName.Text + " " + txtCustomerSurname.Text + "\n" +
                                 "Adli Müşteri Kaydedildi",
                                 "Müsteri Kayıt İşlemi Başarılı",
@@ -131,7 +119,7 @@ namespace BarkodSistemTekstil.Ui
                 refEdit.RefUserName = txtcustomerName.Text;
                 refEdit.RefUserSurname = txtCustomerSurname.Text;
                 data.SubmitChanges();
-                fonk.CustomerRefresh(datagridview1);
+                fonk.musterileriDoldur(datagridview1);
                 MessageBox.Show(txtcustomerName.Text + " " + txtCustomerSurname.Text + "\n" +
                               "Adli Müşteri Düzenlendi",
                               "Müsteri Düzenleme İşlemi Başarılı",
@@ -149,13 +137,13 @@ namespace BarkodSistemTekstil.Ui
         #endregion
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Class.Fonksyonlar fonk = new Class.Fonksyonlar();
-            fonk.CustomerAra(datagridview1, textBox1.Text);
+            CustomerConnectComponent fonk = new CustomerConnectComponent();
+            fonk.musterileriDoldur(datagridview1, textBox1.Text);
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            Class.Fonksyonlar fonk = new Class.Fonksyonlar();
-            fonk.CustomerAra(datagridview1, textBox1.Text, textBox2.Text);
+            CustomerConnectComponent fonk = new CustomerConnectComponent();
+            fonk.musterileriDoldur(datagridview1, textBox1.Text, textBox2.Text);
         }
 
         private void datagridview1_CellClick(object sender, DataGridViewCellEventArgs e)

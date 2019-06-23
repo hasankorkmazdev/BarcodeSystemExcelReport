@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using BarkodSistemTekstil.Controller;
 
 namespace BarkodSistemTekstil.Ui
 {
@@ -22,7 +23,7 @@ namespace BarkodSistemTekstil.Ui
         static SelectCustomer sc;
         Model.BarcodeSystemDataContext data = new Model.BarcodeSystemDataContext();
         private static int selectedid=-1;
-        Class.Fonksyonlar fonk = new Class.Fonksyonlar();
+        CustomerConnectComponent fonk = new CustomerConnectComponent();
         private void btnUygula_Click(object sender, EventArgs e)
         {
             if (selectedid==-1)
@@ -40,7 +41,7 @@ namespace BarkodSistemTekstil.Ui
         private void SelectCustomer_Load(object sender, EventArgs e)
         {
             //TODO:Customer Delete Edildiğinde ki Edilme Soft Delete Etmemiz Lazım Yoksa Satıştaki Kayıtlar Kaybolur
-            fonk.CustomerRefresh(customerDataGridView);
+            fonk.musterileriDoldur(customerDataGridView);
         }
         /// <summary>
         /// Customer Sayfası Açılır Datagridviewden Müşteri Seçilir Bu Methodla Müşterinin ID'si geri Döner
@@ -55,14 +56,14 @@ namespace BarkodSistemTekstil.Ui
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            
-            fonk.CustomerAra(customerDataGridView, txtName.Text);
+
+            fonk.musterileriDoldur(customerDataGridView, txtName.Text);
         }
 
         private void txtSurname_TextChanged(object sender, EventArgs e)
         {
             
-            fonk.CustomerAra(customerDataGridView, txtName.Text,txtSurname.Text);
+            fonk.musterileriDoldur(customerDataGridView, txtName.Text,txtSurname.Text);
         }
 
         private void customerDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)

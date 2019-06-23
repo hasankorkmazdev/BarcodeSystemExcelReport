@@ -3,10 +3,7 @@ using System.Windows.Forms;
 using BarkodSistemTekstil.Class;
 using BarkodSistemTekstil.Ui.Customers;
 using BarkodSistemTekstil.Ui;
-
-
-
-
+using BarkodSistemTekstil.Controller;
 
 namespace BarkodSistemTekstil
 {
@@ -60,6 +57,13 @@ namespace BarkodSistemTekstil
         private void button2_Click(object sender, EventArgs e)
         {
             this.MinimizeBox = true;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            CustomerProc prc = new CustomerProc();
+            CustomerConnectComponent con = new CustomerConnectComponent();
+            con.musterileriDoldur(dataGridView1);
         }
     }
 }

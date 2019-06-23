@@ -87,5 +87,12 @@ namespace BarkodSistemTekstil.Ui
         {
             Class.Routing.AddPage(new Ui.Ui_Repo());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ExcelReport.Report rep = new Report();
+            
+            rep.WriteCell(1, 1, "Hasan");
+        }
     }
 }

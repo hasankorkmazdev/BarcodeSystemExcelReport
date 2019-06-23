@@ -37,6 +37,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUygula
@@ -46,10 +47,10 @@
             this.btnUygula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUygula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUygula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnUygula.Location = new System.Drawing.Point(259, 306);
-            this.btnUygula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUygula.Location = new System.Drawing.Point(194, 249);
+            this.btnUygula.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUygula.Name = "btnUygula";
-            this.btnUygula.Size = new System.Drawing.Size(201, 34);
+            this.btnUygula.Size = new System.Drawing.Size(151, 28);
             this.btnUygula.TabIndex = 10;
             this.btnUygula.Text = "Müşterileri Excele Aktar";
             this.btnUygula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -59,10 +60,10 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(70, 31);
+            this.listBox1.Location = new System.Drawing.Point(52, 25);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(183, 292);
+            this.listBox1.Size = new System.Drawing.Size(138, 238);
             this.listBox1.TabIndex = 12;
             // 
             // button2
@@ -72,10 +73,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(259, 268);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(194, 218);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 34);
+            this.button2.Size = new System.Drawing.Size(151, 28);
             this.button2.TabIndex = 13;
             this.button2.Text = "Sol Üst Logo";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -89,10 +90,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(259, 353);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(194, 287);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(201, 34);
+            this.button3.Size = new System.Drawing.Size(151, 28);
             this.button3.TabIndex = 14;
             this.button3.Text = "Müşterileri Excele Aktar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -106,10 +107,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(344, 48);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(258, 39);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(201, 34);
+            this.button4.Size = new System.Drawing.Size(151, 28);
             this.button4.TabIndex = 15;
             this.button4.Text = "Eski Tasarım";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,10 +124,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(259, 230);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(194, 187);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(201, 34);
+            this.button5.Size = new System.Drawing.Size(151, 28);
             this.button5.TabIndex = 16;
             this.button5.Text = "Print";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,20 +145,38 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(344, 86);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(258, 70);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 34);
+            this.button1.Size = new System.Drawing.Size(151, 28);
             this.button1.TabIndex = 17;
             this.button1.Text = "Yeni Tasarım";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(31)))), ((int)(((byte)(58)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button6.Location = new System.Drawing.Point(194, 144);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(151, 28);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "Deneme";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // ui_Rapor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -165,8 +184,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnUygula);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ui_Rapor";
-            this.Size = new System.Drawing.Size(627, 484);
+            this.Size = new System.Drawing.Size(470, 393);
             this.ResumeLayout(false);
 
         }
@@ -182,5 +202,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button6;
     }
 }

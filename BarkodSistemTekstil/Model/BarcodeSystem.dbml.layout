@@ -2,127 +2,127 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 13.75" name="BarcodeSystem">
   <DataContextMoniker Name="/BarcodeSystemDataContext" />
   <nestedChildShapes>
-    <classShape Id="7a3a7b2a-2c47-433e-b25a-15e0efc0559f" absoluteBounds="3.5, 3.375, 2, 2.7324039713541666">
+    <classShape Id="3ccab9f0-8f2a-430d-aed5-5bbd47174a12" absoluteBounds="3.5, 3.375, 2, 2.7324039713541666">
       <DataClassMoniker Name="/BarcodeSystemDataContext/Customer" />
       <nestedChildShapes>
-        <elementListCompartment Id="dd2424c4-993f-4e73-97ca-b3aafe88d806" absoluteBounds="3.515, 3.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="19a4e08c-9776-484a-a233-798ed337d5a1" absoluteBounds="3.515, 3.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1c840089-cca4-477e-a43a-1824597161af" absoluteBounds="0.75, 4, 2, 1.3862939453125005">
-      <DataClassMoniker Name="/BarcodeSystemDataContext/SubTboRefCustomer" />
-      <nestedChildShapes>
-        <elementListCompartment Id="7d481562-c949-42d2-8219-2a8e7bf255c6" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="be13ef1f-61ba-4fbb-a4fc-f10a58dfd2e4" absoluteBounds="6.25, 3.875, 2, 1.7708968098958327">
+    <classShape Id="58638d19-3c21-40f6-8b94-d732fa25b76d" absoluteBounds="6.25, 3.875, 2, 1.7708968098958327">
       <DataClassMoniker Name="/BarcodeSystemDataContext/CustomerProcces" />
       <nestedChildShapes>
-        <elementListCompartment Id="e5c9ed04-7807-425b-8747-0970d99db03c" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c9c43715-6388-472e-85c6-1a1680772702" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="4d5fd27e-0cef-47bc-8ce7-27eec007ef13" absoluteBounds="9, 0.875, 2, 1.7708968098958331">
+    <classShape Id="135a0f35-3d71-4e8e-a15b-7d2530c5228d" absoluteBounds="9, 0.875, 2, 1.7708968098958331">
       <DataClassMoniker Name="/BarcodeSystemDataContext/OpeationProduct" />
       <nestedChildShapes>
-        <elementListCompartment Id="ba6f2a52-2137-420b-b465-ca0c84deab9f" absoluteBounds="9.015, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="ab0fd46c-d16a-4c73-a2b8-a1d48707b607" absoluteBounds="9.015, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="618febb6-1158-4915-b2d2-9e78fe8a6186" absoluteBounds="6.25, 11, 2, 2.5401025390624987">
+    <classShape Id="18da480e-1e36-46a4-b4a0-cee6c95c710f" absoluteBounds="6.25, 11, 2, 2.5401025390624987">
       <DataClassMoniker Name="/BarcodeSystemDataContext/Product" />
       <nestedChildShapes>
-        <elementListCompartment Id="0707caf1-ca10-48d1-84aa-e86819c1f717" absoluteBounds="6.265, 11.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="53054e4e-2d45-48c1-a270-0c3acb0d7248" absoluteBounds="6.265, 11.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="44a3ee6a-e058-4f8d-ba32-d2769659bdb1" absoluteBounds="6.25, 0.75, 2, 1.9631982421875">
+    <classShape Id="cf7618c6-90a4-445e-8d62-3cbaed7e8727" absoluteBounds="6.25, 0.75, 2, 1.9631982421875">
       <DataClassMoniker Name="/BarcodeSystemDataContext/Sale" />
       <nestedChildShapes>
-        <elementListCompartment Id="c18493e1-744b-4c7b-b1d4-fc491499b5d6" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="faa0dd9b-1e7a-479f-a93b-2a3816cfbecf" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="33b35c34-710b-48b4-ba45-13d3d32e0113" absoluteBounds="9, 11.25, 2, 1.9631982421874987">
+    <classShape Id="71b8326d-8bbc-4a3c-b2bb-a02f792d1c9c" absoluteBounds="9, 11.25, 2, 1.9631982421874987">
       <DataClassMoniker Name="/BarcodeSystemDataContext/Stock" />
       <nestedChildShapes>
-        <elementListCompartment Id="1ce30032-752e-489e-b077-e7c6a276a734" absoluteBounds="9.015, 11.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d110fbde-bd85-4b0d-9086-9e9486dea352" absoluteBounds="9.015, 11.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1b0a219c-d636-4871-a15b-986e90625856" absoluteBounds="3.5, 11.75, 2, 1.1939925130208344">
+    <classShape Id="71acc772-163b-48dd-8152-c11934e37b22" absoluteBounds="3.5, 11.75, 2, 1.1939925130208344">
       <DataClassMoniker Name="/BarcodeSystemDataContext/SubTboCategories" />
       <nestedChildShapes>
-        <elementListCompartment Id="492e0b7d-3d82-4d6f-a6f7-1b690d9b664e" absoluteBounds="3.515, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e211c0e3-e6f0-4f00-b46a-11a6bda442f8" absoluteBounds="3.515, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="bfa6c0e8-f67a-4d85-8b51-1c26b66f47e8" absoluteBounds="3.5, 7.625, 2, 1.1939925130208335">
+    <classShape Id="8c57408d-a4e0-40c0-9fe1-627934053146" absoluteBounds="3.5, 7.625, 2, 1.1939925130208335">
       <DataClassMoniker Name="/BarcodeSystemDataContext/SubTboPaymentMethod" />
       <nestedChildShapes>
-        <elementListCompartment Id="60ec4138-2baf-40a7-ae11-3f31cbe971d5" absoluteBounds="3.515, 8.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="c1760f60-2669-4368-93da-3d5fae76ded4" absoluteBounds="3.515, 8.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="36e7aa17-c085-4b19-bdca-2560a0093f40" absoluteBounds="3.5, 1.125, 2, 1.1939925130208333">
+    <classShape Id="ed138192-7be8-47e6-9ab3-1d900c967281" absoluteBounds="3.5, 1.125, 2, 1.1939925130208333">
       <DataClassMoniker Name="/BarcodeSystemDataContext/SubTboProccesList" />
       <nestedChildShapes>
-        <elementListCompartment Id="95bab8e5-aafd-49be-a616-f95ffddb23e9" absoluteBounds="3.515, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7082b7d0-8878-45aa-9bb7-f228c7891eee" absoluteBounds="3.515, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 4.69314697265625); (3.5 : 4.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
-      <AssociationMoniker Name="/BarcodeSystemDataContext/SubTboRefCustomer/SubTboRefCustomer_Customer" />
-      <nodes>
-        <classShapeMoniker Id="1c840089-cca4-477e-a43a-1824597161af" />
-        <classShapeMoniker Id="7a3a7b2a-2c47-433e-b25a-15e0efc0559f" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 4.76044840494792); (5.94791666666667 : 4.76044840494792 : JumpStart); (6.11458333333333 : 4.76044840494792 : JumpEnd); (6.25 : 4.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <classShape Id="c21b6c06-ea73-42e9-a686-99638de2ffc8" absoluteBounds="0.75, 4, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/BarcodeSystemDataContext/SubTboRefCustomer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="966e57d6-92ab-4ee3-817d-5a23086c7af6" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.76044840494792); (5.94791666666667 : 4.76044840494792 : JumpStart); (6.11458333333333 : 4.76044840494792 : JumpEnd); (6.25 : 4.76044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/Customer/Customer_CustomerProcces" />
       <nodes>
-        <classShapeMoniker Id="7a3a7b2a-2c47-433e-b25a-15e0efc0559f" />
-        <classShapeMoniker Id="be13ef1f-61ba-4fbb-a4fc-f10a58dfd2e4" />
+        <classShapeMoniker Id="3ccab9f0-8f2a-430d-aed5-5bbd47174a12" />
+        <classShapeMoniker Id="58638d19-3c21-40f6-8b94-d732fa25b76d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.25 : 11); (8.625 : 10.625); (8.625 : 1.76044840494792); (9 : 1.76044840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.25 : 11); (8.625 : 10.625); (8.625 : 1.76044840494792); (9 : 1.76044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/Product/Product_OpeationProduct" />
       <nodes>
-        <classShapeMoniker Id="618febb6-1158-4915-b2d2-9e78fe8a6186" />
-        <classShapeMoniker Id="4d5fd27e-0cef-47bc-8ce7-27eec007ef13" />
+        <classShapeMoniker Id="18da480e-1e36-46a4-b4a0-cee6c95c710f" />
+        <classShapeMoniker Id="135a0f35-3d71-4e8e-a15b-7d2530c5228d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.25 : 1.25522420247396); (9 : 1.25522420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.25 : 1.25522420247396); (9 : 1.25522420247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/Sale/Sale_OpeationProduct" />
       <nodes>
-        <classShapeMoniker Id="44a3ee6a-e058-4f8d-ba32-d2769659bdb1" />
-        <classShapeMoniker Id="4d5fd27e-0cef-47bc-8ce7-27eec007ef13" />
+        <classShapeMoniker Id="cf7618c6-90a4-445e-8d62-3cbaed7e8727" />
+        <classShapeMoniker Id="135a0f35-3d71-4e8e-a15b-7d2530c5228d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 3.375); (5.875 : 3); (5.875 : 1.73159912109375); (6.25 : 1.73159912109375)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 3.375); (5.875 : 3); (5.875 : 1.73159912109375); (6.25 : 1.73159912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/Customer/Customer_Sale" />
       <nodes>
-        <classShapeMoniker Id="7a3a7b2a-2c47-433e-b25a-15e0efc0559f" />
-        <classShapeMoniker Id="44a3ee6a-e058-4f8d-ba32-d2769659bdb1" />
+        <classShapeMoniker Id="3ccab9f0-8f2a-430d-aed5-5bbd47174a12" />
+        <classShapeMoniker Id="cf7618c6-90a4-445e-8d62-3cbaed7e8727" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.25 : 12.2315991210937); (9 : 12.2315991210937)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.25 : 12.2315991210937); (9 : 12.2315991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/Product/Product_Stock" />
       <nodes>
-        <classShapeMoniker Id="618febb6-1158-4915-b2d2-9e78fe8a6186" />
-        <classShapeMoniker Id="33b35c34-710b-48b4-ba45-13d3d32e0113" />
+        <classShapeMoniker Id="18da480e-1e36-46a4-b4a0-cee6c95c710f" />
+        <classShapeMoniker Id="71b8326d-8bbc-4a3c-b2bb-a02f792d1c9c" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 12.3469962565104); (6.25 : 12.3469962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 12.3469962565104); (6.25 : 12.3469962565104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/SubTboCategories/SubTboCategories_Product" />
       <nodes>
-        <classShapeMoniker Id="1b0a219c-d636-4871-a15b-986e90625856" />
-        <classShapeMoniker Id="618febb6-1158-4915-b2d2-9e78fe8a6186" />
+        <classShapeMoniker Id="71acc772-163b-48dd-8152-c11934e37b22" />
+        <classShapeMoniker Id="18da480e-1e36-46a4-b4a0-cee6c95c710f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 7.65622649649439); (6.03125 : 7.12497649649439); (6.03125 : 2.25365068164062); (6.25 : 2.25365068164062)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 7.65622649649439); (6.03125 : 7.12497649649439); (6.03125 : 2.25365068164062); (6.25 : 2.25365068164062)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/SubTboPaymentMethod/SubTboPaymentMethod_Sale" />
       <nodes>
-        <classShapeMoniker Id="bfa6c0e8-f67a-4d85-8b51-1c26b66f47e8" />
-        <classShapeMoniker Id="44a3ee6a-e058-4f8d-ba32-d2769659bdb1" />
+        <classShapeMoniker Id="8c57408d-a4e0-40c0-9fe1-627934053146" />
+        <classShapeMoniker Id="cf7618c6-90a4-445e-8d62-3cbaed7e8727" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 2.2868455607472); (5.81607443490112 : 2.60291999564832 : JumpStart); (5.93392556509888 : 2.72077112584607 : JumpEnd); (5.96875 : 2.7555955607472); (5.96875 : 4.28647220247396); (6.25 : 4.28647220247396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 2.2868455607472); (5.96875 : 2.7555955607472); (5.96875 : 4.28647220247396); (6.25 : 4.28647220247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/BarcodeSystemDataContext/SubTboProccesList/SubTboProccesList_CustomerProcces" />
       <nodes>
-        <classShapeMoniker Id="36e7aa17-c085-4b19-bdca-2560a0093f40" />
-        <classShapeMoniker Id="be13ef1f-61ba-4fbb-a4fc-f10a58dfd2e4" />
+        <classShapeMoniker Id="ed138192-7be8-47e6-9ab3-1d900c967281" />
+        <classShapeMoniker Id="58638d19-3c21-40f6-8b94-d732fa25b76d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.69314697265625); (3.5 : 4.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BarcodeSystemDataContext/SubTboRefCustomer/SubTboRefCustomer_Customer" />
+      <nodes>
+        <classShapeMoniker Id="c21b6c06-ea73-42e9-a686-99638de2ffc8" />
+        <classShapeMoniker Id="3ccab9f0-8f2a-430d-aed5-5bbd47174a12" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

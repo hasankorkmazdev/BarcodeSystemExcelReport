@@ -60,8 +60,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Fonksyonlar.cs" />
+    <Compile Include="Class\CustomerProc.cs" />
+    <Compile Include="Class\ProductProc.cs" />
     <Compile Include="Class\Routing.cs" />
+    <Compile Include="Controller\CustomerConnectComponent.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +99,6 @@
     </Compile>
     <Compile Include="Ui\MessageDöndür.Designer.cs">
       <DependentUpon>MessageDöndür.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ui\ReportUi\Main.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Ui\ReportUi\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Ui\SalePage.cs">
       <SubType>UserControl</SubType>
@@ -182,9 +178,6 @@
     <EmbeddedResource Include="Ui\MessageDöndür.resx">
       <DependentUpon>MessageDöndür.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ui\ReportUi\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ui\SalePage.resx">
       <DependentUpon>SalePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,7 +234,6 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\AddIco.png" />
   </ItemGroup>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BarcodeSystem" Class="BarcodeSystemDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-FANH6EM\SQLEXPRESS;Initial Catalog=BarcodeSystem;Integrated Security=True;Connect Timeout=30;TrustServerCertificate=False" SettingsObjectName="BarkodSistemTekstil.Properties.Settings" SettingsPropertyName="BarcodeSystemConnectionString2" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=HasanKorkmaz\HASANKORKMAZ;Initial Catalog=BarcodeSystem;Integrated Security=True" SettingsObjectName="BarkodSistemTekstil.Properties.Settings" SettingsPropertyName="BarcodeSystemConnectionString3" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Customer" Member="Customer">
     <Type Name="Customer">
       <Column Name="CustomerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -15,14 +15,6 @@
       <Association Name="Customer_CustomerProcces" Member="CustomerProcces" ThisKey="CustomerID" OtherKey="CustomerID" Type="CustomerProcces" />
       <Association Name="Customer_Sale" Member="Sale" ThisKey="CustomerID" OtherKey="CustomerID" Type="Sale" />
       <Association Name="SubTboRefCustomer_Customer" Member="SubTboRefCustomer" ThisKey="CustomerReference" OtherKey="RefUserID" Type="SubTboRefCustomer" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.SubTboRefCustomer" Member="SubTboRefCustomer">
-    <Type Name="SubTboRefCustomer">
-      <Column Name="RefUserID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="RefUserName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-      <Column Name="RefUserSurname" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
-      <Association Name="SubTboRefCustomer_Customer" Member="Customer" ThisKey="RefUserID" OtherKey="CustomerReference" Type="Customer" />
     </Type>
   </Table>
   <Table Name="dbo.CustomerProcces" Member="CustomerProcces">
@@ -106,6 +98,14 @@
       <Column Name="ProccesID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="ProccesName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Association Name="SubTboProccesList_CustomerProcces" Member="CustomerProcces" ThisKey="ProccesID" OtherKey="ProccesType" Type="CustomerProcces" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubTboRefCustomer" Member="SubTboRefCustomer">
+    <Type Name="SubTboRefCustomer">
+      <Column Name="RefUserID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RefUserName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="RefUserSurname" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="SubTboRefCustomer_Customer" Member="Customer" ThisKey="RefUserID" OtherKey="CustomerReference" Type="Customer" />
     </Type>
   </Table>
 </Database>

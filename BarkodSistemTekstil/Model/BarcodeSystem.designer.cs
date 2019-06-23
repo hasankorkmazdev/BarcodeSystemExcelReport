@@ -33,9 +33,6 @@ namespace BarkodSistemTekstil.Model
     partial void InsertCustomer(Customer instance);
     partial void UpdateCustomer(Customer instance);
     partial void DeleteCustomer(Customer instance);
-    partial void InsertSubTboRefCustomer(SubTboRefCustomer instance);
-    partial void UpdateSubTboRefCustomer(SubTboRefCustomer instance);
-    partial void DeleteSubTboRefCustomer(SubTboRefCustomer instance);
     partial void InsertCustomerProcces(CustomerProcces instance);
     partial void UpdateCustomerProcces(CustomerProcces instance);
     partial void DeleteCustomerProcces(CustomerProcces instance);
@@ -60,10 +57,13 @@ namespace BarkodSistemTekstil.Model
     partial void InsertSubTboProccesList(SubTboProccesList instance);
     partial void UpdateSubTboProccesList(SubTboProccesList instance);
     partial void DeleteSubTboProccesList(SubTboProccesList instance);
+    partial void InsertSubTboRefCustomer(SubTboRefCustomer instance);
+    partial void UpdateSubTboRefCustomer(SubTboRefCustomer instance);
+    partial void DeleteSubTboRefCustomer(SubTboRefCustomer instance);
     #endregion
 		
 		public BarcodeSystemDataContext() : 
-				base(global::BarkodSistemTekstil.Properties.Settings.Default.BarcodeSystemConnectionString2, mappingSource)
+				base(global::BarkodSistemTekstil.Properties.Settings.Default.BarcodeSystemConnectionString3, mappingSource)
 		{
 			OnCreated();
 		}
@@ -97,14 +97,6 @@ namespace BarkodSistemTekstil.Model
 			get
 			{
 				return this.GetTable<Customer>();
-			}
-		}
-		
-		public System.Data.Linq.Table<SubTboRefCustomer> SubTboRefCustomer
-		{
-			get
-			{
-				return this.GetTable<SubTboRefCustomer>();
 			}
 		}
 		
@@ -169,6 +161,14 @@ namespace BarkodSistemTekstil.Model
 			get
 			{
 				return this.GetTable<SubTboProccesList>();
+			}
+		}
+		
+		public System.Data.Linq.Table<SubTboRefCustomer> SubTboRefCustomer
+		{
+			get
+			{
+				return this.GetTable<SubTboRefCustomer>();
 			}
 		}
 	}
@@ -545,144 +545,6 @@ namespace BarkodSistemTekstil.Model
 		{
 			this.SendPropertyChanging();
 			entity.Customer = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SubTboRefCustomer")]
-	public partial class SubTboRefCustomer : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _RefUserID;
-		
-		private string _RefUserName;
-		
-		private string _RefUserSurname;
-		
-		private EntitySet<Customer> _Customer;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnRefUserIDChanging(int value);
-    partial void OnRefUserIDChanged();
-    partial void OnRefUserNameChanging(string value);
-    partial void OnRefUserNameChanged();
-    partial void OnRefUserSurnameChanging(string value);
-    partial void OnRefUserSurnameChanged();
-    #endregion
-		
-		public SubTboRefCustomer()
-		{
-			this._Customer = new EntitySet<Customer>(new Action<Customer>(this.attach_Customer), new Action<Customer>(this.detach_Customer));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefUserID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int RefUserID
-		{
-			get
-			{
-				return this._RefUserID;
-			}
-			set
-			{
-				if ((this._RefUserID != value))
-				{
-					this.OnRefUserIDChanging(value);
-					this.SendPropertyChanging();
-					this._RefUserID = value;
-					this.SendPropertyChanged("RefUserID");
-					this.OnRefUserIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefUserName", DbType="NVarChar(150)")]
-		public string RefUserName
-		{
-			get
-			{
-				return this._RefUserName;
-			}
-			set
-			{
-				if ((this._RefUserName != value))
-				{
-					this.OnRefUserNameChanging(value);
-					this.SendPropertyChanging();
-					this._RefUserName = value;
-					this.SendPropertyChanged("RefUserName");
-					this.OnRefUserNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefUserSurname", DbType="NVarChar(150)")]
-		public string RefUserSurname
-		{
-			get
-			{
-				return this._RefUserSurname;
-			}
-			set
-			{
-				if ((this._RefUserSurname != value))
-				{
-					this.OnRefUserSurnameChanging(value);
-					this.SendPropertyChanging();
-					this._RefUserSurname = value;
-					this.SendPropertyChanged("RefUserSurname");
-					this.OnRefUserSurnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SubTboRefCustomer_Customer", Storage="_Customer", ThisKey="RefUserID", OtherKey="CustomerReference")]
-		public EntitySet<Customer> Customer
-		{
-			get
-			{
-				return this._Customer;
-			}
-			set
-			{
-				this._Customer.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_Customer(Customer entity)
-		{
-			this.SendPropertyChanging();
-			entity.SubTboRefCustomer = this;
-		}
-		
-		private void detach_Customer(Customer entity)
-		{
-			this.SendPropertyChanging();
-			entity.SubTboRefCustomer = null;
 		}
 	}
 	
@@ -2371,6 +2233,144 @@ namespace BarkodSistemTekstil.Model
 		{
 			this.SendPropertyChanging();
 			entity.SubTboProccesList = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SubTboRefCustomer")]
+	public partial class SubTboRefCustomer : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _RefUserID;
+		
+		private string _RefUserName;
+		
+		private string _RefUserSurname;
+		
+		private EntitySet<Customer> _Customer;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnRefUserIDChanging(int value);
+    partial void OnRefUserIDChanged();
+    partial void OnRefUserNameChanging(string value);
+    partial void OnRefUserNameChanged();
+    partial void OnRefUserSurnameChanging(string value);
+    partial void OnRefUserSurnameChanged();
+    #endregion
+		
+		public SubTboRefCustomer()
+		{
+			this._Customer = new EntitySet<Customer>(new Action<Customer>(this.attach_Customer), new Action<Customer>(this.detach_Customer));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefUserID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int RefUserID
+		{
+			get
+			{
+				return this._RefUserID;
+			}
+			set
+			{
+				if ((this._RefUserID != value))
+				{
+					this.OnRefUserIDChanging(value);
+					this.SendPropertyChanging();
+					this._RefUserID = value;
+					this.SendPropertyChanged("RefUserID");
+					this.OnRefUserIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefUserName", DbType="NVarChar(150)")]
+		public string RefUserName
+		{
+			get
+			{
+				return this._RefUserName;
+			}
+			set
+			{
+				if ((this._RefUserName != value))
+				{
+					this.OnRefUserNameChanging(value);
+					this.SendPropertyChanging();
+					this._RefUserName = value;
+					this.SendPropertyChanged("RefUserName");
+					this.OnRefUserNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RefUserSurname", DbType="NVarChar(150)")]
+		public string RefUserSurname
+		{
+			get
+			{
+				return this._RefUserSurname;
+			}
+			set
+			{
+				if ((this._RefUserSurname != value))
+				{
+					this.OnRefUserSurnameChanging(value);
+					this.SendPropertyChanging();
+					this._RefUserSurname = value;
+					this.SendPropertyChanged("RefUserSurname");
+					this.OnRefUserSurnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SubTboRefCustomer_Customer", Storage="_Customer", ThisKey="RefUserID", OtherKey="CustomerReference")]
+		public EntitySet<Customer> Customer
+		{
+			get
+			{
+				return this._Customer;
+			}
+			set
+			{
+				this._Customer.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Customer(Customer entity)
+		{
+			this.SendPropertyChanging();
+			entity.SubTboRefCustomer = this;
+		}
+		
+		private void detach_Customer(Customer entity)
+		{
+			this.SendPropertyChanging();
+			entity.SubTboRefCustomer = null;
 		}
 	}
 }
