@@ -45,10 +45,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ExcelReport\ExcelReport\bin\Debug\ExcelReport.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\CustomerProc.cs" />
+    <Compile Include="Class\iTextSharpRapor.cs" />
     <Compile Include="Class\ProductProc.cs" />
     <Compile Include="Class\Routing.cs" />
     <Compile Include="Controller\CustomerConnectComponent.cs" />
@@ -93,6 +98,12 @@
     </Compile>
     <Compile Include="Ui\Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ui\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Ui\MessageDöndür.cs">
       <SubType>Form</SubType>
@@ -174,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ui\Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ui\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ui\MessageDöndür.resx">
       <DependentUpon>MessageDöndür.cs</DependentUpon>

@@ -13,7 +13,8 @@ namespace BarkodSistemTekstil.Class
         {
             Program.f1.pnlContainer.Controls.Clear();
             Program.f1.pnlContainer.Controls.Add(uc);
-
+            
+            
 
         }
         public static void Clear()

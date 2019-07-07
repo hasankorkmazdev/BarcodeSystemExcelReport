@@ -16,7 +16,7 @@ namespace BarkodSistemTekstil
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(Startup());
+            Application.Run( Startup());
         }
 
         public static Form Startup()

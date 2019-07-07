@@ -56,14 +56,14 @@ namespace BarkodSistemTekstil
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.MinimizeBox = true;
+            this.WindowState= System.Windows.Forms.FormWindowState.Minimized;
         }
-
+        
         private void button11_Click(object sender, EventArgs e)
         {
-            CustomerProc prc = new CustomerProc();
-            CustomerConnectComponent con = new CustomerConnectComponent();
-            con.musterileriDoldur(dataGridView1);
+          
         }
+      
+        
     }
 }

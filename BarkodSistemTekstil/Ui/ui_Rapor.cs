@@ -85,7 +85,8 @@ namespace BarkodSistemTekstil.Ui
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Class.Routing.AddPage(new Ui.Ui_Repo());
+            Ui.Form1 f1 = new Form1();
+            f1.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)

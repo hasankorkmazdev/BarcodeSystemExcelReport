@@ -67,18 +67,20 @@
             this.panel1.Controls.Add(this.lblPrice);
             this.panel1.Controls.Add(this.txtBarcodeSearch);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 447);
+            this.panel1.Size = new System.Drawing.Size(706, 364);
             this.panel1.TabIndex = 45;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblName.Location = new System.Drawing.Point(347, 7);
+            this.lblName.Location = new System.Drawing.Point(260, 6);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(175, 30);
+            this.lblName.Size = new System.Drawing.Size(133, 22);
             this.lblName.TabIndex = 52;
             this.lblName.Text = "Ürün Adı : null";
             // 
@@ -89,10 +91,10 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button10.Location = new System.Drawing.Point(165, 43);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button10.Location = new System.Drawing.Point(124, 35);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(23, 22);
+            this.button10.Size = new System.Drawing.Size(17, 18);
             this.button10.TabIndex = 51;
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = false;
@@ -101,9 +103,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(3, 43);
+            this.label4.Location = new System.Drawing.Point(2, 35);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 23);
+            this.label4.Size = new System.Drawing.Size(120, 21);
             this.label4.TabIndex = 44;
             this.label4.Text = "Ürün Durumu :";
             // 
@@ -122,12 +125,13 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 63);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(939, 368);
+            this.dataGridView1.Size = new System.Drawing.Size(704, 299);
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -135,20 +139,21 @@
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPrice.Location = new System.Drawing.Point(347, 44);
+            this.lblPrice.Location = new System.Drawing.Point(260, 36);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(131, 30);
+            this.lblPrice.Size = new System.Drawing.Size(98, 22);
             this.lblPrice.TabIndex = 42;
             this.lblPrice.Text = "Fiyat : null";
             // 
             // txtBarcodeSearch
             // 
             this.txtBarcodeSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBarcodeSearch.Location = new System.Drawing.Point(98, 7);
-            this.txtBarcodeSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBarcodeSearch.Location = new System.Drawing.Point(74, 6);
+            this.txtBarcodeSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtBarcodeSearch.Multiline = true;
             this.txtBarcodeSearch.Name = "txtBarcodeSearch";
-            this.txtBarcodeSearch.Size = new System.Drawing.Size(243, 31);
+            this.txtBarcodeSearch.Size = new System.Drawing.Size(183, 26);
             this.txtBarcodeSearch.TabIndex = 12;
             this.txtBarcodeSearch.TextChanged += new System.EventHandler(this.txtBarcodeSearch_TextChanged);
             // 
@@ -156,9 +161,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(3, 11);
+            this.label7.Location = new System.Drawing.Point(2, 9);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 23);
+            this.label7.Size = new System.Drawing.Size(72, 21);
             this.label7.TabIndex = 15;
             this.label7.Text = "Barkod :";
             // 
@@ -174,9 +180,10 @@
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnTotaliskonto);
             this.panel2.Controls.Add(this.btnProductDiscount);
-            this.panel2.Location = new System.Drawing.Point(4, 456);
+            this.panel2.Location = new System.Drawing.Point(3, 370);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(940, 202);
+            this.panel2.Size = new System.Drawing.Size(706, 164);
             this.panel2.TabIndex = 51;
             // 
             // btnWaitListReturn
@@ -186,10 +193,10 @@
             this.btnWaitListReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWaitListReturn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWaitListReturn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnWaitListReturn.Location = new System.Drawing.Point(31, 104);
-            this.btnWaitListReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnWaitListReturn.Location = new System.Drawing.Point(23, 84);
+            this.btnWaitListReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnWaitListReturn.Name = "btnWaitListReturn";
-            this.btnWaitListReturn.Size = new System.Drawing.Size(362, 39);
+            this.btnWaitListReturn.Size = new System.Drawing.Size(272, 32);
             this.btnWaitListReturn.TabIndex = 62;
             this.btnWaitListReturn.Text = "Beklemedekileri Getir";
             this.btnWaitListReturn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,9 +207,10 @@
             // 
             this.lblPaymentMethod.AutoSize = true;
             this.lblPaymentMethod.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPaymentMethod.Location = new System.Drawing.Point(642, 45);
+            this.lblPaymentMethod.Location = new System.Drawing.Point(482, 37);
+            this.lblPaymentMethod.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPaymentMethod.Name = "lblPaymentMethod";
-            this.lblPaymentMethod.Size = new System.Drawing.Size(133, 23);
+            this.lblPaymentMethod.Size = new System.Drawing.Size(106, 21);
             this.lblPaymentMethod.TabIndex = 52;
             this.lblPaymentMethod.Text = "Ödeme Şekli";
             // 
@@ -212,9 +220,10 @@
             this.pnlPaymentMethod.Controls.Add(this.btnKredi);
             this.pnlPaymentMethod.Controls.Add(this.registeredCustomer);
             this.pnlPaymentMethod.Controls.Add(this.btnNakit);
-            this.pnlPaymentMethod.Location = new System.Drawing.Point(501, 57);
+            this.pnlPaymentMethod.Location = new System.Drawing.Point(376, 46);
+            this.pnlPaymentMethod.Margin = new System.Windows.Forms.Padding(2);
             this.pnlPaymentMethod.Name = "pnlPaymentMethod";
-            this.pnlPaymentMethod.Size = new System.Drawing.Size(434, 110);
+            this.pnlPaymentMethod.Size = new System.Drawing.Size(326, 90);
             this.pnlPaymentMethod.TabIndex = 61;
             // 
             // btnKredi
@@ -224,10 +233,10 @@
             this.btnKredi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKredi.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKredi.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnKredi.Location = new System.Drawing.Point(9, 19);
-            this.btnKredi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnKredi.Location = new System.Drawing.Point(7, 15);
+            this.btnKredi.Margin = new System.Windows.Forms.Padding(2);
             this.btnKredi.Name = "btnKredi";
-            this.btnKredi.Size = new System.Drawing.Size(206, 39);
+            this.btnKredi.Size = new System.Drawing.Size(154, 32);
             this.btnKredi.TabIndex = 60;
             this.btnKredi.Text = "Kredi";
             this.btnKredi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -241,10 +250,10 @@
             this.registeredCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registeredCustomer.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registeredCustomer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.registeredCustomer.Location = new System.Drawing.Point(9, 62);
-            this.registeredCustomer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registeredCustomer.Location = new System.Drawing.Point(7, 50);
+            this.registeredCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.registeredCustomer.Name = "registeredCustomer";
-            this.registeredCustomer.Size = new System.Drawing.Size(206, 39);
+            this.registeredCustomer.Size = new System.Drawing.Size(154, 32);
             this.registeredCustomer.TabIndex = 62;
             this.registeredCustomer.Text = "Kayıtlı Müşteriye";
             this.registeredCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,10 +267,10 @@
             this.btnNakit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNakit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNakit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNakit.Location = new System.Drawing.Point(221, 19);
-            this.btnNakit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNakit.Location = new System.Drawing.Point(166, 15);
+            this.btnNakit.Margin = new System.Windows.Forms.Padding(2);
             this.btnNakit.Name = "btnNakit";
-            this.btnNakit.Size = new System.Drawing.Size(206, 39);
+            this.btnNakit.Size = new System.Drawing.Size(154, 32);
             this.btnNakit.TabIndex = 63;
             this.btnNakit.Text = "Nakit";
             this.btnNakit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -271,10 +280,11 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTotal.Location = new System.Drawing.Point(591, 12);
+            this.lblTotal.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTotal.Location = new System.Drawing.Point(352, 5);
+            this.lblTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(191, 23);
+            this.lblTotal.Size = new System.Drawing.Size(299, 39);
             this.lblTotal.TabIndex = 55;
             this.lblTotal.Text = "Toplam Fiyat : null ";
             // 
@@ -285,10 +295,10 @@
             this.btnWaitList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWaitList.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWaitList.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnWaitList.Location = new System.Drawing.Point(3, 104);
-            this.btnWaitList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnWaitList.Location = new System.Drawing.Point(2, 84);
+            this.btnWaitList.Margin = new System.Windows.Forms.Padding(2);
             this.btnWaitList.Name = "btnWaitList";
-            this.btnWaitList.Size = new System.Drawing.Size(206, 39);
+            this.btnWaitList.Size = new System.Drawing.Size(154, 32);
             this.btnWaitList.TabIndex = 60;
             this.btnWaitList.Text = "Bekleme";
             this.btnWaitList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -302,10 +312,10 @@
             this.btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSil.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSil.Location = new System.Drawing.Point(3, 12);
-            this.btnSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSil.Location = new System.Drawing.Point(2, 10);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(2);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(206, 39);
+            this.btnSil.Size = new System.Drawing.Size(154, 32);
             this.btnSil.TabIndex = 51;
             this.btnSil.Text = "SİL";
             this.btnSil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -319,10 +329,10 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.Location = new System.Drawing.Point(3, 55);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Location = new System.Drawing.Point(2, 45);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(206, 39);
+            this.btnCancel.Size = new System.Drawing.Size(154, 32);
             this.btnCancel.TabIndex = 52;
             this.btnCancel.Text = "İptal";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -336,10 +346,10 @@
             this.btnTotaliskonto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTotaliskonto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTotaliskonto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTotaliskonto.Location = new System.Drawing.Point(215, 12);
-            this.btnTotaliskonto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTotaliskonto.Location = new System.Drawing.Point(161, 10);
+            this.btnTotaliskonto.Margin = new System.Windows.Forms.Padding(2);
             this.btnTotaliskonto.Name = "btnTotaliskonto";
-            this.btnTotaliskonto.Size = new System.Drawing.Size(206, 39);
+            this.btnTotaliskonto.Size = new System.Drawing.Size(154, 32);
             this.btnTotaliskonto.TabIndex = 53;
             this.btnTotaliskonto.Text = "Toplam İskonto";
             this.btnTotaliskonto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -353,10 +363,10 @@
             this.btnProductDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductDiscount.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductDiscount.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnProductDiscount.Location = new System.Drawing.Point(215, 55);
-            this.btnProductDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProductDiscount.Location = new System.Drawing.Point(161, 45);
+            this.btnProductDiscount.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductDiscount.Name = "btnProductDiscount";
-            this.btnProductDiscount.Size = new System.Drawing.Size(206, 39);
+            this.btnProductDiscount.Size = new System.Drawing.Size(154, 32);
             this.btnProductDiscount.TabIndex = 54;
             this.btnProductDiscount.Text = "Ürün İskonto";
             this.btnProductDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -365,12 +375,13 @@
             // 
             // SalePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SalePage";
-            this.Size = new System.Drawing.Size(2120, 662);
+            this.Size = new System.Drawing.Size(722, 538);
             this.Load += new System.EventHandler(this.SalePage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

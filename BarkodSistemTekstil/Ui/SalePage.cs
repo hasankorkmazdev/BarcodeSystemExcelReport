@@ -15,6 +15,7 @@ namespace BarkodSistemTekstil.Ui
         public SalePage()
         {
             InitializeComponent();
+           
         }
         Model.BarcodeSystemDataContext data = new Model.BarcodeSystemDataContext();
         int datagridviewID = 1;
@@ -29,6 +30,7 @@ namespace BarkodSistemTekstil.Ui
 
         private void SalePage_Load(object sender, EventArgs e)
         {
+
             dataGridView1.Columns.Add("ListID", "Sıra");
             dataGridView1.Columns.Add("ProductID", "Ürün Numarası");
             dataGridView1.Columns.Add("ProductBarcode", "Barkod");
@@ -40,42 +42,50 @@ namespace BarkodSistemTekstil.Ui
             dataGridView1.Columns.Add("ProductDetails", "Ürün Detayı");
             dataGridView1.Columns["ProductID"].Visible = false;
             btnWaitListReturn.Visible = false;
+            txtBarcodeSearch.Focus();
          
         }
         //Buttons Event
         private void btnNakit_Click(object sender, EventArgs e)
         {
-            Model.Sale satis = new Model.Sale();
-            satis.SaleDate = DateTime.Now.Date;
-            satis.PaymentMethodSale = 1;
-            satis.TotalPrice = totalPrice;
-            satis.TotalDiscount = Convert.ToDecimal(totalDiscount);
-            data.Sale.InsertOnSubmit(satis);
-            data.SubmitChanges();
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {//TODO:Ürün Stokta Varmı Yokmu Kontrol Edilecek++
-                
-                Model.BarcodeSystemDataContext pdata = new Model.BarcodeSystemDataContext();
-                Model.OpeationProduct satilanurunler = new Model.OpeationProduct();
-                satilanurunler.SaleProduct = (from q in data.Sale
-                                              orderby q.SaleID descending
-                                              select q).First().SaleID;
-                satilanurunler.ProductID = (int)(row.Cells["ProductID"].Value);
-                satilanurunler.ProductDiscount = Convert.ToDecimal(row.Cells["ProductDiscount"].Value);
-                satilanurunler.ProductPrice = Convert.ToDecimal((row.Cells["ProductSalePrice"].Value.ToString().Split(' ')[0]));
-                pdata.OpeationProduct.InsertOnSubmit(satilanurunler);
-                pdata.SubmitChanges();
-                totalDiscount = 0;
-                totalPrice = 0;
-                productDiscount = 0;
-                lblName.Text = "Ürün Adı : null";
-                lblPrice.Text = "Ürün Fiyat : null";
-                lblTotal.Text = "Toplam Fiyat : null";
+            if (dataGridView1.RowCount > 0)
+            {
+                Model.Sale satis = new Model.Sale();
+                satis.SaleDate = DateTime.Now.Date;
+                satis.PaymentMethodSale = 1;
+                satis.TotalPrice = totalPrice;
+                satis.TotalDiscount = Convert.ToDecimal(totalDiscount);
+                data.Sale.InsertOnSubmit(satis);
+                data.SubmitChanges();
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {//TODO:Ürün Stokta Varmı Yokmu Kontrol Edilecek++
+
+                    Model.BarcodeSystemDataContext pdata = new Model.BarcodeSystemDataContext();
+                    Model.OpeationProduct satilanurunler = new Model.OpeationProduct();
+                    satilanurunler.SaleProduct = (from q in data.Sale
+                                                  orderby q.SaleID descending
+                                                  select q).First().SaleID;
+                    satilanurunler.ProductID = (int)(row.Cells["ProductID"].Value);
+                    satilanurunler.ProductDiscount = Convert.ToDecimal(row.Cells["ProductDiscount"].Value);
+                    satilanurunler.ProductPrice = Convert.ToDecimal((row.Cells["ProductSalePrice"].Value.ToString().Split(' ')[0]));
+                    pdata.OpeationProduct.InsertOnSubmit(satilanurunler);
+                    pdata.SubmitChanges();
+                    totalDiscount = 0;
+                    totalPrice = 0;
+                    productDiscount = 0;
+                    lblName.Text = "Ürün Adı : null";
+                    lblPrice.Text = "Ürün Fiyat : null";
+                    lblTotal.Text = "Toplam Fiyat : null";
+                }
+                datagridviewID = 1;
+                dataGridView1.Rows.Clear();
+                MessageDöndür.Message("Satış İşlemi başarıyla Gerçekleştirildi.", "İşlem Onaylandı", MessageDöndür.MessageIcon.OK, MessageDöndür.MessageButton.OK);
             }
-            datagridviewID = 1;
-            dataGridView1.Rows.Clear();
-            MessageDöndür.Message("Satış İşlemi başarıyla Gerçekleştirildi.", "İşlem Onaylandı", MessageDöndür.MessageIcon.OK, MessageDöndür.MessageButton.OK);
-        }
+            else
+            {
+                MessageDöndür.Message("Listede Ürün Yok Satış İşlemi Gerçekleştirilemiyor.", "Satış işlemi İptal Edildi", MessageDöndür.MessageIcon.Eror, MessageDöndür.MessageButton.OK);
+            }
+            }
         private void btnKredi_Click(object sender, EventArgs e)
         {
             if (dataGridView1.RowCount > 0)
