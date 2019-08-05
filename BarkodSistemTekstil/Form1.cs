@@ -37,7 +37,7 @@ namespace BarkodSistemTekstil
         }
         private void button10_Click(object sender, EventArgs e)
         {
-            Routing.AddPage(new Ui_CustomerEdit());
+            Routing.AddPage(new Ui.Customers.Ui_CustomerAdd());
         }
         private void button5_Click(object sender, EventArgs e)
         {

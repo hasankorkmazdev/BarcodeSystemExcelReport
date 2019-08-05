@@ -69,6 +69,7 @@
     <Compile Include="Class\ProductProc.cs" />
     <Compile Include="Class\Routing.cs" />
     <Compile Include="Controller\CustomerConnectComponent.cs" />
+    <Compile Include="Controller\ProductConnectComponent.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,10 +136,10 @@
     <Compile Include="Ui\Ui_CustomerAdd.Designer.cs">
       <DependentUpon>Ui_CustomerAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ui\Ui_CustomerEdit.cs">
+    <Compile Include="Ui\Customer\Ui_CustomerEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Ui\Ui_CustomerEdit.Designer.cs">
+    <Compile Include="Ui\Customer\Ui_CustomerEdit.Designer.cs">
       <DependentUpon>Ui_CustomerEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Ui\Ui_ProductAddPage.cs">
@@ -204,7 +205,7 @@
     <EmbeddedResource Include="Ui\Ui_CustomerAdd.resx">
       <DependentUpon>Ui_CustomerAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ui\Ui_CustomerEdit.resx">
+    <EmbeddedResource Include="Ui\Customer\Ui_CustomerEdit.resx">
       <DependentUpon>Ui_CustomerEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ui\Ui_ProductAddPage.resx">
@@ -334,6 +335,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WalletIco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ui\Prodcut\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

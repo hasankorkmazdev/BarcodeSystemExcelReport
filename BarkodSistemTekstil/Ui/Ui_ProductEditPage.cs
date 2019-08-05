@@ -208,7 +208,7 @@ namespace BarkodSistemTekstil.Ui
                 var Barcode = (from cat in data.SubTboCategories
                                join q in data.Product
                                on cat.CategoryID equals q.ProductCategorie
-                               where q.ProductBarcode.StartsWith(textBox1.Text) && q.ProductDelete == true
+                               where q.ProductBarcode.StartsWith(textBox1.Text) && q.ProductDelete == false
                                select new
                                {
                                    q.ProductID,
